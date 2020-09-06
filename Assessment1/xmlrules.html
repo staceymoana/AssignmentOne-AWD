@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-------------------------- HEAD ------------------------------>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Advanced Internet and Web Learning Portfolio by Stacey Moana</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<!-------------------------- BODY ------------------------------>
+<body>
+    <!----------------------- HEADER --------------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" id="mynav">
+            <img src="images/global.png" alt="logo" style="width: 2em; height: 2em">
+            <a class="navbar-brand text-white" href="index.html" style="padding: 0 0 0 1em;">ITWD6.408</a>
+                <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+            <div class="collapse navbar-collapse justify-content-end mynav" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown text-white">
+                    <a class="nav-link text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Forms
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item text-white dd" href="html_form.html">HTML</a>
+                        <a class="dropdown-item text-white dd" href="google_form.html">Google</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown text-white">
+                    <a class="nav-link text-success" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        XML
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-success dd" href="xmlrules.html">XML Rules</a>
+                            <a class="dropdown-item text-white dd" href="xmlrss.html">XML RSS</a>
+                        </div>
+                </li>
+                <li class="nav-item dropdown text-white">
+                    <a class="nav-link text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item text-white dd" href="seo.html">SEO</a>
+                        <a class="dropdown-item text-white dd" href="copyright.html">Copyright</a>
+                        <a class="dropdown-item text-white dd" href="references.html">References</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="javascript.html">Javascript</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!------------------------ MAIN ---------------------------->
+    <main>
+        <section id="intro">
+            <div class="mycontainer">
+                <h2>XML Rules</h2>
+                <br>
+                <p>
+                    XML has rules that must be followed in order to be a valid XML file. Listed below are 6 examples of rules that must be followed.
+                </p>
+            </div>
+        </section>
+
+        <section id="rules">
+            <div id="rule">
+                <div class="rulecontainer">
+                    <h2>XML Rule 1</h2>
+                    <p>When writing an XML file, at the top of the page, you must 
+                	delcare that it is an XML file and its version type. Example shown below:<br>
+                	<p style='font-family: "Courier New"'>&lt;?xml version...&gt;</p>
+                </div>
+            </div>
+
+            <div id="rule">
+                <div class="rulecontainer">
+                    <h2>XML Rule 2</h2>
+                    <p>All XML files must have a root element. This root element is the holder of all other elements in your file and can be named to match your content. For example, if writing a contact list the root element would be: <br>
+                    <p style='font-family: "Courier New"'>&lt;contact-list&gt;
+                    </p>
+                </div>
+            </div>
+
+            <div id="rule">
+                <div class="rulecontainer">
+                    <h2>XML Rule 3</h2>
+                    <p>Unlike HTML, all elements within your XML file must have closing tags. Example shown below:<br>
+                    <p style='font-family: "Courier New"'>&lt;/contact-list&gt;
+                    </p>
+                </div>
+            </div>
+
+            <div id="rule">
+                <div class="rulecontainer">
+                    <h2>XML Rule 4</h2>
+                    <p>All elements are case sensitive. For example:</p>
+                    <p style='font-family: "Courier New"'>&lt;/Contact-List&gt; is incorrect
+                    </p>
+                </div>
+            </div>
+
+
+            <div id="rule">
+                <div class="rulecontainer">
+                    <h2>XML Rule 5</h2>
+                    <p>Elements can be assigned attributes. These must be of single-value. For example, a contact within the contact list could have a home or work phone number: <br>
+                    <p style='font-family: "Courier New", Courier, monospace'>&lt;phone-number category="work"&gt;
+                    </p>
+                </div>
+            </div>
+
+            <div id="rule">
+                <div class="rulecontainer">
+                    <h2>XML Rule 6</h2>
+                    <p>When creating XML documents, you have the ability to create comments within your code. Example shown below:
+                        <p style='font-family: "Courier New", Courier, monospace'>&lt;!-- Comment goes here --&gt;
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <!----------------------- FOOTER --------------------------->
+    <footer>
+        <p>Advanced Web Design. Copyright &copy; 2019</p>
+        <p style="text-align: right; padding-right:1em;">Global icon made by <a href="https://www.flaticon.com/authors/srip">Srip</a> from <a href="www.flaticon.com">www.flaticon.com</a><br>
+    </footer>
+
+    <script src="js/js.js"></script> 
+</body>
+</html>

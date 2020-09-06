@@ -1,0 +1,337 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-size: 1em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+	color: black;
+}
+
+main {
+    border-top-style: solid;
+    border-top-color: green;
+    border-bottom-style: solid;
+    border-bottom-color: green;
+}
+
+.mycontainer {
+    width: 90%;
+    margin: 1em auto;
+}
+
+.rulecontainer {
+    padding: 2em 1em 1em 1em;
+}
+
+nav {
+    line-height: 2.3em;
+}
+
+nav, .dropdown .dropdown-menu {
+    background-color:#2a3a4a;
+    text-transform: uppercase;
+}
+
+nav li a:hover, .dropdown .dropdown-menu a:hover {
+    background-color: rgba(54, 166, 241, 0.897);
+    color: white;
+}
+
+nav a {
+    text-align: right;
+}
+
+nav .dd {
+    text-align:right;
+}
+
+#showcase {
+    text-align: center;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    color: #f2f2f2;
+    padding: 3em 0 1em 0;
+    position: relative;
+}
+
+#showcase text {
+    width: 95vw;
+}
+
+#showcase h1, #web-bio h2, #dev-skills h2 {
+    font-weight: bold;
+}
+
+.web-technologies {
+    padding: 1em 0 1em 0;
+    background-color:#007491;
+}
+
+.bio {
+    padding: 1em 0 1em 0;
+    background-color: green;
+    text-align: center;
+}
+
+.bio h2 {
+    text-align: left;
+}
+
+#web-bio img {
+    width: 8.0em;
+    height: 8.0em;
+    border-radius: 50%;
+}
+
+#web-bio p {
+    margin-top: 1em;
+}
+
+#dev-skills {
+    background-color: #E0E0E0;
+    padding: 1em 0 1em 0;
+}
+
+.skill-section {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-row-gap: 1em;
+}
+
+.skill-section img {
+    margin-bottom: 1em;
+}
+
+.section {
+    padding: 1em 1em 0em 1em;
+    text-align: center;
+    background-color: #D3D3D3;
+}
+
+#soa {
+    padding: 1em 0 1em 0;   
+    background-color: tomato;
+}
+
+#intro {
+    background-color:#7b8091;
+    padding: 1em 0 3em 0;
+    color: black;
+}
+
+#intro h2 {
+    font-weight: bold;
+}
+
+#HTMLForm {
+    padding: 1em 0 1em 0;
+    width: 80vw;
+}
+
+#HTMLForm input, #HTMLForm select, #HTMLForm textarea, #HTMLForm button {
+    border-radius: 0;
+}
+
+#HTMLForm button {
+    background-color: grey;
+    border-style: none;
+    width: 100px;
+}
+
+#intro a {
+    color: black;
+}
+
+#rules, #items {
+    margin: 1em 1em 1em 1em;
+}
+
+#rule {
+    background-color: #E0E0E0;
+    margin-bottom: 1em;
+}
+
+
+#article {
+    background-color: #b3a98a;
+    margin: 1em;
+    padding: 2em 1em 1em 1em;
+}
+
+#title {
+    text-align: center;
+}
+
+.articlecontainer a {
+    color: black;
+}
+
+#seolist {
+    margin-left: 2em;
+    padding-bottom: 4em;
+}
+
+#info {
+    margin: 1em 2em 1em 2em;
+}
+
+.sectioncontainer {
+    padding: 2em 1em 1em 1em;
+}
+
+#section {
+    margin-bottom: 1em;
+    background-color: #E0E0E0;
+}
+
+#jsexamples {
+    margin: 1em 1em 1em 1em;
+}
+
+#example {
+    background-color: #E0E0E0;
+    margin-bottom: 1em;
+}
+
+.examplecontainer {
+    padding: 1em 1em 1em 1em;
+}
+
+#vowelBtn, #GSTBtn, #dateBtn {
+    padding: 0.2em 0.2em 0.2em 0.2em;
+}
+
+#vowelTxt, #inputGST, #inputDate {
+    margin-left: 0.5em;
+}
+
+#jsexamples img {
+    width: 8em;
+    height: 8em;
+    margin-left: 1em;
+}
+
+footer {
+    background-color: #2a3a4a;;
+    text-align: center;
+    color: white;
+    padding: 1em 1em 1em 1em;
+}
+
+footer a {
+    color: white;
+}
+
+
+
+/*Media queries for tablet*/
+@media screen and (min-width: 600px) {
+    #showcase {
+        font-size: 1.3em;
+    }
+
+    #showcase h1 {
+        font-size: 3.0em;
+    }
+
+    #showcase text {
+        width: 90vw;
+    }
+
+    #web-bio p {
+        margin-top: 0;
+    }
+
+    .mywrapper {
+        display: flex;
+    }
+
+    .p-holder  {
+        flex: 80%;
+        padding-left: 1em;
+    }
+
+
+    .image-holder {
+        flex: 20%;
+        text-align: center;
+    }
+    
+    .bio {
+        text-align: left;
+    }
+
+    .rss {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #vowelTxt {
+        margin-left: 1em;
+    }
+
+}
+
+/*Media queries for desktop*/
+@media screen and (min-width: 992px) {
+
+    #showcase {
+        font-size: 1.5em;
+        height: auto;
+        padding-top: 5em;
+        padding-bottom: 2em;
+    }
+
+    #showcase h1 {
+        font-size: 3.3em;
+    }
+
+    #showcase p {
+        width: 80vw;
+    }
+
+    #web-bio {
+        display: grid;
+        grid-template-columns: 50% 50%;
+	    grid-column-gap: 0px;
+    }
+
+    nav .dd {
+        text-align: left;
+    }
+
+    #web-bio img {
+        width: 238px;
+        height: 273px;
+        position: relative;
+    }
+
+    .p-holder {
+        padding-left: 3em;
+    }
+
+    .skill-section {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: none;
+        grid-column-gap: 1em;
+    }
+
+    #HTMLForm {
+        width: 50vw;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .rss {
+        grid-template-columns: auto auto auto;
+    }
+}
